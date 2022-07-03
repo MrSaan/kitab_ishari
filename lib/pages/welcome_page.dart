@@ -19,9 +19,9 @@ class _WelcomePageState extends State<WelcomePage> {
   ];
 
   //var blur image
-  double _sigmaX = 4.0; // from 0-10
-  double _sigmaY = 4.0; // from 0-10
-  double _opacity = 0.1; // from 0-1.0
+  double _sigmaX = 0; // from 0-10
+  double _sigmaY = 0; // from 0-10
+  double _opacity = 0; // from 0-1.0
 
   @override
   Widget build(BuildContext context) {
