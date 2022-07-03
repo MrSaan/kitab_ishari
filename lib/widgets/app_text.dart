@@ -4,11 +4,18 @@ import 'package:flutter/material.dart';
 class AppText extends StatelessWidget {
   // variabel
   double size;
+  double hText;
   String text;
   final Color color;
 
   // class untuk memanggil
-  AppText({Key? key, required this.text, this.size = 16, this.color = Colors.black}) : super(key: key);
+  AppText({
+    Key? key,
+    required this.text,
+    this.size = 16,
+    this.color = Colors.black,
+    this.hText = 0,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +24,7 @@ class AppText extends StatelessWidget {
           color: color,
           fontSize: size,
           fontFamily: 'Raleway',
-          height: 5,
+          height: hText,
         ));
   }
 }
