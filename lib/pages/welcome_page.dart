@@ -43,7 +43,7 @@ class _WelcomePageState extends State<WelcomePage> {
                       children: [
                         Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                           AppLargeText(text: "Baca", color: Colors.white),
-                          AppText(text: "Kitab ishari", color: Colors.white, size: 25),
+                          AppText(text: "Shalawat", color: Colors.white, size: 25),
                           SizedBox(height: 20),
                           Container(
                               width: 300,
