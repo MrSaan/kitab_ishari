@@ -52,7 +52,7 @@ class _WelcomePageState extends State<WelcomePage> {
                                 color: Colors.white,
                                 size: 14,
                                 hText: 1.5,
-                                sText: 1.5,
+                                sText: 0.5,
                               ))
                         ])
                       ],
