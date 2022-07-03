@@ -51,7 +51,7 @@ class _WelcomePageState extends State<WelcomePage> {
                                 text: "Dimana saja dan kapan saja, cukup dalam genggaman Anda, ke-utamaan dan keberkahan shalawat senantiasa tercurahkan kepada Anda sekalian",
                                 color: Colors.white,
                                 size: 16,
-                                hText: 1,
+                                hText: 1.5,
                               ))
                         ])
                       ],

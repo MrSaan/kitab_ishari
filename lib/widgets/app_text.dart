@@ -14,7 +14,7 @@ class AppText extends StatelessWidget {
     required this.text,
     this.size = 16,
     this.color = Colors.black,
-    this.hText = null,
+    this.hText,
   }) : super(key: key);
 
   @override
@@ -25,6 +25,7 @@ class AppText extends StatelessWidget {
           fontSize: size,
           fontFamily: 'Raleway',
           height: hText,
+          decorationThickness: 2,
         ));
   }
 }
