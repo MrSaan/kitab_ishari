@@ -46,7 +46,7 @@ class _WelcomePageState extends State<WelcomePage> {
                           AppText(text: "Kitab ishari", color: Colors.white, size: 25),
                           SizedBox(height: 20),
                           Container(
-                              width: double.maxFinite,
+                              width: 300,
                               child: AppText(
                                 text: "Dimana saja dan kapan saja, cukup dalam genggaman Anda, ke-utamaan dan keberkahan shalawat senantiasa tercurahkan kepada Anda sekalian",
                                 color: Colors.white,
