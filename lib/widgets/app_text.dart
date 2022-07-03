@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class AppText extends StatelessWidget {
   // variabel
   double size;
-  double hText;
+  final double? hText;
   String text;
   final Color color;
 
@@ -14,7 +14,7 @@ class AppText extends StatelessWidget {
     required this.text,
     this.size = 16,
     this.color = Colors.black,
-    this.hText = 0,
+    this.hText = null,
   }) : super(key: key);
 
   @override
