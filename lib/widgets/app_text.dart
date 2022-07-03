@@ -5,6 +5,7 @@ class AppText extends StatelessWidget {
   // variabel
   double size;
   final double? hText;
+  final double? sText;
   String text;
   final Color color;
 
@@ -15,6 +16,7 @@ class AppText extends StatelessWidget {
     this.size = 16,
     this.color = Colors.black,
     this.hText,
+    this.sText,
   }) : super(key: key);
 
   @override
@@ -25,7 +27,7 @@ class AppText extends StatelessWidget {
           fontSize: size,
           fontFamily: 'Raleway',
           height: hText,
-          letterSpacing: 3,
+          letterSpacing: sText,
         ));
   }
 }
