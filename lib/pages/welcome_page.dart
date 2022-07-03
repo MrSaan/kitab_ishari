@@ -50,7 +50,7 @@ class _WelcomePageState extends State<WelcomePage> {
                               child: AppText(
                                 text: "Dimana saja dan kapan saja, cukup dalam genggaman Anda, ke-utamaan dan keberkahan shalawat senantiasa tercurahkan kepada Anda sekalian",
                                 color: Colors.white,
-                                size: 14,
+                                size: 16,
                               ))
                         ])
                       ],
