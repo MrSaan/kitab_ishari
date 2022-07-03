@@ -25,7 +25,7 @@ class AppText extends StatelessWidget {
           fontSize: size,
           fontFamily: 'Raleway',
           height: hText,
-          decorationThickness: 3,
+          letterSpacing: 3,
         ));
   }
 }
