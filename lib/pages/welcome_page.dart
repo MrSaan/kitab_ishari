@@ -12,6 +12,7 @@ class WelcomePage extends StatefulWidget {
 
 class _WelcomePageState extends State<WelcomePage> {
   List images = [
+    "Introduction.png",
     "welcome-doa.jpg",
     "welcome-jamaah.jpg",
     "welcome-tower.jpg",
