@@ -14,7 +14,7 @@ class ResponsiveButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         width: lebar,
-        padding: const EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 20),
+        padding: const EdgeInsets.only(top: 10, left: 10, right: 10, bottom: 10),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           color: Colors.grey[400],
