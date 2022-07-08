@@ -56,7 +56,7 @@ class _WelcomePageState extends State<WelcomePage> {
                           SizedBox(
                             height: 20,
                           ),
-                          ResponsiveButton(),
+                          AppText(text: "lorem"),
                         ])
                       ],
                     ),
