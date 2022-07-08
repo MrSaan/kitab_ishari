@@ -19,6 +19,10 @@ class ResponsiveButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           color: Colors.green[900],
         ),
-        child: Row());
+        child: Row(
+          children: [
+            Image.asset("assets/images/arrow-right.png"),
+          ],
+        ));
   }
 }
