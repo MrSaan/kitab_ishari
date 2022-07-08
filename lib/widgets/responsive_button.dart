@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:helloworld/misc/colors.dart';
 
 class ResponsiveButton extends StatelessWidget {
   // variabel
@@ -17,7 +18,7 @@ class ResponsiveButton extends StatelessWidget {
         padding: const EdgeInsets.only(top: 10, left: 10, right: 10, bottom: 10),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: Colors.grey[400],
+          color: AppColors.mainColor,
         ),
         child: Row(
           children: [
