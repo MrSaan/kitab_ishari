@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:helloworld/widgets/app_large_text.dart';
 import 'package:helloworld/widgets/app_text.dart';
+import 'package:helloworld/widgets/responsive_button.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({Key? key}) : super(key: key);
@@ -51,7 +52,11 @@ class _WelcomePageState extends State<WelcomePage> {
                                 size: 14,
                                 hText: 1.5,
                                 sText: 3,
-                              ))
+                              )),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          ResponsiveButton(),
                         ])
                       ],
                     ),
