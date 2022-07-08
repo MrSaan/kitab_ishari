@@ -17,11 +17,11 @@ class ResponsiveButton extends StatelessWidget {
         height: 60,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: Colors.green[900],
+          color: Colors.grey[400],
         ),
         child: Row(
           children: [
-            Image.asset("assets/images/arrow-right.png"),
+            Image.asset("assets/images/arrow-to-right.png"),
           ],
         ));
   }
