@@ -18,6 +18,7 @@ class ResponsiveButton extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           color: Colors.green[900],
-        ));
+        ),
+        child: Row());
   }
 }
