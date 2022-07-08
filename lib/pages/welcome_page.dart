@@ -57,7 +57,7 @@ class _WelcomePageState extends State<WelcomePage> {
                             height: 20,
                           ),
                           ResponsiveButton(
-                            lebar: 10,
+                            lebar: 80,
                           ),
                         ])
                       ],
