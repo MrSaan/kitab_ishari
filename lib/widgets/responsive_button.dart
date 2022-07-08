@@ -21,7 +21,7 @@ class ResponsiveButton extends StatelessWidget {
         ),
         child: Row(
           children: [
-            Image.asset("assets/images/arrow-to-right.png"),
+            Image.asset("assets/images/arrow-right.png"),
           ],
         ));
   }
