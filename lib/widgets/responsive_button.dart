@@ -15,14 +15,12 @@ class ResponsiveButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: lebar,
-      height: 60,
       child: Row(
         children: [
-          SvgPicture.network(
-            dogUrl,
-            placeholderBuilder: (context) => CircularProgressIndicator(),
-            height: 128.0,
-          ),
+          SvgPicture.string('''<svg viewBox="0 0 200 200"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <image xlink:href="https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png" height="200" width="200"/>
+</svg>'''),
         ],
       ),
     );
