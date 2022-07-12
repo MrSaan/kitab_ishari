@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:helloworld/widgets/app_large_text.dart';
 import 'package:helloworld/widgets/app_text.dart';
+import 'package:helloworld/widgets/responsive_button.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({Key? key}) : super(key: key);
@@ -12,15 +13,14 @@ class WelcomePage extends StatefulWidget {
 
 class _WelcomePageState extends State<WelcomePage> {
   List images = [
-    "welcome-doa.jpg",
-    "welcome-jamaah.jpg",
-    "welcome-tower.jpg",
+    "Introduction.png",
+    "Introduction-1.png",
   ];
 
   //var blur image
-  double _sigmaX = 4.0; // from 0-10
-  double _sigmaY = 4.0; // from 0-10
-  double _opacity = 0.1; // from 0-1.0
+  double _sigmaX = 0.3; // from 0-10
+  double _sigmaY = 0.3; // from 0-10
+  double _opacity = 0.3; // from 0-1.0
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +50,13 @@ class _WelcomePageState extends State<WelcomePage> {
                                 text: "Dimana saja dan kapan saja, cukup dalam genggaman Anda, ke-utamaan dan keberkahan shalawat senantiasa tercurahkan kepada Anda sekalian",
                                 color: Colors.white,
                                 size: 14,
-                              ))
+                                hText: 1.5,
+                                sText: 3,
+                              )),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          ResponsiveButton(),
                         ])
                       ],
                     ),
