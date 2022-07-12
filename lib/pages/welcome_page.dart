@@ -68,7 +68,7 @@ class _WelcomePageState extends State<WelcomePage> {
                               height: index == indexDots ? 25 : 8,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8),
-                                color: index == indexDots ? AppColors.mainColor : AppColors.mainColor.withOpacity(0.3),
+                                color: index == indexDots ? AppColors.mainColor : AppColors.mainColor.withOpacity(0.1),
                               ),
                             );
                           }),
