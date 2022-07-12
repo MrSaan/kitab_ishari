@@ -63,6 +63,7 @@ class _WelcomePageState extends State<WelcomePage> {
                         Column(
                           children: List.generate(2, (indexDots) {
                             return Container(
+                              margin: const EdgeInsets.only(bottom: 2)
                               width: 8,
                               height: index == indexDots ? 25 : 8,
                               decoration: BoxDecoration(
