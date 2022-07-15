@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:helloworld/pages/navpages/bookmark_page.dart';
 import 'package:helloworld/pages/navpages/book_page.dart';
@@ -17,6 +16,14 @@ List pages = [
   BookmarkPage(),
 ];
 
+int _selectedIndex = 0;
+
+void _onItemTapped(int index) {
+  setState(() {
+    _selectedIndex = index;
+  });
+}
+
 class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
@@ -28,6 +35,8 @@ class _MainPageState extends State<MainPage> {
         selectedItemColor: Colors.black54,
         unselectedItemColor: Colors.grey.withOpacity(0.5),
         elevation: 0,
+        onTap: _onItemTapped,
+        currentIndex: _selectedIndex,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.apps), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.book), label: "Book"),
