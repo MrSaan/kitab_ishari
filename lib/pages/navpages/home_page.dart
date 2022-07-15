@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -8,9 +9,21 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text("My Home Page"),
+    return Scaffold(
+      body: Column(
+        children: [
+          Container(
+            child: Row(
+              children: [
+                Icon(
+                  Icons.menu,
+                  size: 30,
+                  color: Colors.black54,
+                )
+              ],
+            ),
+          )
+        ],
       ),
     );
   }
