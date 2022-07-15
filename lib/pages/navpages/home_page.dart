@@ -40,6 +40,10 @@ class _HomePageState extends State<HomePage> {
           ),
           Container(
             margin: const EdgeInsets.only(left: 20),
+            AppText(
+              text: "Assalamualaikum",
+              color: Colors.grey,
+            ),
           )
         ],
       ),
