@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
           ),
           Container(
             margin: const EdgeInsets.only(left: 20),
-            child: Row(children: [
+            child: Column(children: [
               AppText(text: "Assalamualaikum", color: Colors.grey),
               AppLargeText(text: "M. Amar Firmansyah"),
             ]),
