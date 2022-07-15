@@ -1,6 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:helloworld/pages/main_page.dart';
+import 'package:helloworld/pages/navpages/main_page.dart';
 import 'package:helloworld/pages/welcome_page.dart';
 
 void main() => runApp(MyApp());
@@ -30,6 +30,6 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         // A widget which will be started on application startup
-        home: MainPage();
+        home: MainPage());
   }
 }
