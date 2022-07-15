@@ -13,6 +13,7 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         children: [
           Container(
+            padding: const EdgeInsets.only(top: 70, left: 30),
             child: Row(
               children: [
                 Icon(
