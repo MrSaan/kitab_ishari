@@ -9,26 +9,26 @@ class MainPage extends StatefulWidget {
   _MainPageState createState() => _MainPageState();
 }
 
-List pages = [
-  HomePage(),
-  BookPage(),
-  EventPage(),
-  BookmarkPage(),
-];
-
-int _selectedIndex = 0;
-
-void _onItemTapped(int index) {
-  setState(() {
-    _selectedIndex = index;
-  });
-}
-
 class _MainPageState extends State<MainPage> {
+  List pages = [
+    HomePage(),
+    BookPage(),
+    EventPage(),
+    BookmarkPage(),
+  ];
+
+  int _selectedIndex = 0;
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: pages[0],
+      body: pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         showSelectedLabels: false,
         showUnselectedLabels: false,
