@@ -1,4 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:helloworld/widgets/app_large_text.dart';
+import 'package:helloworld/widgets/app_text.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -8,9 +11,42 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text("My Home Page"),
+    return Scaffold(
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            padding: const EdgeInsets.only(top: 70, left: 20, right: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Icon(
+                  Icons.menu,
+                  size: 30,
+                  color: Colors.black54,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.grey.withOpacity(0.5),
+                  ),
+                )
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 40,
+          ),
+          Container(
+            margin: const EdgeInsets.only(left: 20),
+            child: Column(children: [
+              AppText(text: "Assalamualaikum", color: Colors.grey),
+              AppLargeText(text: "M. Amar Firmansyah"),
+            ]),
+          )
+        ],
       ),
     );
   }
