@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:helloworld/widgets/app_text.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -32,7 +33,11 @@ class _HomePageState extends State<HomePage> {
                 )
               ],
             ),
-          )
+          ),
+          SizedBox(
+            height: 40,
+          ),
+          AppText(text: "Assalamualaikum"),
         ],
       ),
     );
