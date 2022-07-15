@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:helloworld/widgets/app_large_text.dart';
 import 'package:helloworld/widgets/app_text.dart';
 
 class HomePage extends StatefulWidget {
@@ -40,7 +41,10 @@ class _HomePageState extends State<HomePage> {
           ),
           Container(
             margin: const EdgeInsets.only(left: 20),
-            child: AppText(text: "Assalamualaikum", color: Colors.grey),
+            child: Row(children: [
+              AppText(text: "Assalamualaikum", color: Colors.grey),
+              AppLargeText(text: "M. Amar Firmansyah"),
+            ]),
           )
         ],
       ),
